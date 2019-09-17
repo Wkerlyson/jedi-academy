@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { Student } from './student.model';
+import { from } from 'rxjs';
+
 @Component({
   selector: 'jad-students',
   templateUrl: './students.component.html',
@@ -7,8 +10,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StudentsComponent implements OnInit {
 
-  @Input() name: string
-  @Input() isJedi: boolean
+  @Input() student: Student
 
   constructor() { }
 
